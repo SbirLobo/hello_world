@@ -10,23 +10,11 @@
 
 int main(void)
 {
-	char a;
-	int size_of_a = sizeof(a);
-	int i;
-	int size_of_i = sizeof(i);
-	long int li;
-	int size_of_li = sizeof(li);
-	long long int lli;
-	int size_of_lli = sizeof(lli);
-	float fi = 3.14159265359;
-	int size_of_fi = sizeof(fi);
-
-
-printf("Size of a char: %d byte(s)\n", size_of_a);
-printf("Size of a int: %d byte(s)\n", size_of_i);
-printf("Size of a long int: %d byte(s)\n", size_of_li);
-printf("Size of a long long int: %d byte(s)\n", size_of_lli);
-printf("Size of a float: %d byte(s)\n", size_of_fi);
+printf("Size of a char: %ld byte(s)\n", sizeof(char));
+printf("Size of a int: %ld byte(s)\n", sizeof(int));
+printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
+printf("Size of a long long int: %ld byte(s)\n", sizeof(long long));
+printf("Size of a float: %ld byte(s)\n", sizeof(float));
 return (0);
 }
 

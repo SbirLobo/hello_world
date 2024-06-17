@@ -2,10 +2,10 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Description: 'description for betty requirement'
- * @parameter: describe the parameter
- * 
+ * @parameter: void parameter
+ *
  * Return: Always 0 (Success)
  */
 

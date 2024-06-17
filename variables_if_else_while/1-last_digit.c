@@ -14,11 +14,11 @@ int main(void)
 {
 
 	int random_int;
+	int n;
 
 	srand(time(0));
-	random_int = rand() - RAND_MAX / 2;
-
-	int n = random_int % 10;
+	random_int = rand() - RAND_MAX / 2; 
+	n = random_int % 10;
 
 	printf("Last digit of %d is %d and is ", random_int, n);
 

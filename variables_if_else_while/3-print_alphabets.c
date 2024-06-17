@@ -20,10 +20,10 @@ int main(void)
 	n++;
 	}
 	while (m <= 'Z')
-        {
-        putchar(m);
-        m++;
-        }
+	{
+	putchar(m);
+	m++;
+	}
 	putchar(_a);
 	return (0);
 }

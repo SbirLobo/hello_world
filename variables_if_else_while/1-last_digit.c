@@ -18,12 +18,12 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	n = 980;
+
 	last_digit = n % 10;
 
 	printf("Last digit of %d is %d and is ", n, last_digit);
 
-	if (n ==0)
+	if (n == 0)
 	{
 		printf("is 0\n");
 	}

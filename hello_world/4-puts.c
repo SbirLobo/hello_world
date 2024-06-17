@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-/* description for betty-style */
+/**
+ * main - Entry point
+ * 
+ * Description: 'description for betty requirement'
+ * @parameter: describe the parameter
+ * 
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {

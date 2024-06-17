@@ -13,14 +13,14 @@
 int main(void)
 {
 
-	int random_int;
+	int last_digit;
 	int n;
 
 	srand(time(0));
-	random_int = rand() - RAND_MAX / 2; 
-	n = random_int % 10;
+	n = rand() - RAND_MAX / 2;
+	last_digit = random_int % 10;
 
-	printf("Last digit of %d is %d and is ", random_int, n);
+	printf("Last digit of %d is %d and is ", n, last_digit);
 
 	if (n < 6)
 	{

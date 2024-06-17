@@ -22,7 +22,7 @@ int main(void)
 	int size_of_fi = sizeof(fi);
 
 
-printf("Size of a char: %d byte(s)\n",size_of_a);
+printf("Size of a char: %d byte(s)\n", size_of_a);
 printf("Size of a int: %d byte(s)\n", size_of_i);
 printf("Size of a long int: %d byte(s)\n", size_of_li);
 printf("Size of a long long int: %d byte(s)\n", size_of_lli);

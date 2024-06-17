@@ -4,7 +4,6 @@
  * main - Entry point
  *
  * Description: 'description for betty requirement'
- * @parameter: void parameter
  *
  * Return: Always 0 (Success)
  */

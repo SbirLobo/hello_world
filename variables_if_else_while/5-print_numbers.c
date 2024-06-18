@@ -10,21 +10,14 @@
 
 int main(void)
 {
-	char n = 'a';
-
+	int n = 0;
+	
 	char _a = '\n';
 
-	while (n <= 'z')
+	while (n <= 10)
 	{
-	if ((n == 'q') || (n == 'e'))
-		{
-		n++;
-		}
-	else
-		{
 		putchar(n);
 		n++;
-		}
 	}
 	putchar(_a);
 	return (0);

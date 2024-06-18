@@ -14,9 +14,9 @@ int main(void)
 	
 	char _a = '\n';
 
-	while (n <= 10)
+	while (n < 10)
 	{
-		putchar(n);
+		printf("%d", n);
 		n++;
 	}
 	putchar(_a);

@@ -18,5 +18,5 @@ int print_last_digit(int a)
 		a = -1 * a;
 	}
 	_putchar('0' + a);
-	return (result);
+	return (a);
 }

@@ -1,9 +1,13 @@
 #include "main.h"
 
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+ * Print alphabet
+ *
+ * Description: 'print alphabet'
+ *
+ * Return: no return
  */
+
 void print_alphabet(void)
 {
 	char n = 'a';

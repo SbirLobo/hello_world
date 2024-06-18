@@ -5,7 +5,7 @@
  *
  * Description: 'print alphabet in lowercase'
  *
- * @c: entry
+ * @n: entry
  *
  * Return: 1 if lowercase, 0 in other cases
  */
@@ -24,7 +24,7 @@ int print_sign(int n)
 	if (n < 0)
 	{
 		_putchar(moins);
-		return(-1);
+		return (-1);
 	}
 	_putchar(zero);
 	return (0);

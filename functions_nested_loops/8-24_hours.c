@@ -19,12 +19,12 @@ void jack_bauer(void)
 	{
 		for (j = 0; j < 60; j++)
 		{
-		_putchar('0' + (i - i % 10)/10);
+		_putchar('0' + (i - i % 10) / 10);
 		_putchar('0' + i % 10);
 		_putchar(dd);
-		_putchar('0' + (j - j % 10)/10);
+		_putchar('0' + (j - j % 10) / 10);
 		_putchar('0' + j % 10);
 		_putchar(_a);
 		}
 	}
-}          
+}

@@ -13,6 +13,7 @@
 int print_last_digit(int a)
 {
 	int result;
+
 	if (a < 0)
 	{
 		a = -a;

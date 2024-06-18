@@ -11,7 +11,7 @@
 int main(void)
 {
 	int n = 0;
-	
+
 	char _a = '\n';
 
 	while (n < 10)

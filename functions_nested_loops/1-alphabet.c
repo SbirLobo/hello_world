@@ -2,9 +2,9 @@
 
 /**
  * print_alphabet - program for alphabet printing
- * 
+ *
  * Description: 'print alphabet in lowercase'
- * 
+ *
  * Return: Always 0 (Success)
  */
 

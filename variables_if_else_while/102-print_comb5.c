@@ -26,7 +26,7 @@ for (j = 0; j <= 9; j++)
 {
 for (k = 0; k <= 9; k++)
 {
-for (l = 0; l <=9; l++)
+for (l = 0; l <= 9 ; l++)
 {
 	num1 = i * 10 + j;
 	num2 = k * 10 + l;

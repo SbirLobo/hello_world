@@ -32,7 +32,10 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(space);
+				if (j != 0)
+				{
+					_putchar(space);
+				}
 			}
 			_putchar(unit);
 			if (j != 9)

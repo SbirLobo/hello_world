@@ -23,7 +23,7 @@ void times_table(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			calc = i*j;
+			calc = i * j;
 			diz = ('0' + (calc - calc % 10) / 10);
 			unit = ('0' + calc % 10);
 			if (diz > '0')

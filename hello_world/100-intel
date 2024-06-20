@@ -1,2 +1,2 @@
 #!/bin/bash
-armclang -S $CFILE
+gcc -S -masm=intel $CFILE

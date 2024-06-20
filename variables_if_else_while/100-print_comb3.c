@@ -20,22 +20,19 @@ int main(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if ( i < j )
+			if (i < j)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
-			
-			if (i < 9 || j <9)
-				if (i*10 + j < 89)
-				{
+
+			if (i < 8 || j < 9)
 			{
 				putchar(virg);
 				putchar(space);
 			}
-				}
 			}
 		}
-	
+
 	}
 	putchar(aa);
 	return (0);

@@ -12,8 +12,7 @@ int main(void)
 	long int cur = 1;
 	long int prev = 1;
 	long int inst;
-	int i = 0;
-	long long int sum = 0;
+	long int sum = 0;
 
 	while (cur < 4000000)
 	{
@@ -25,6 +24,6 @@ int main(void)
 		prev = cur;
 		cur += inst;
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }

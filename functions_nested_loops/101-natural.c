@@ -2,11 +2,12 @@
 #include <string.h>
 
 /**
- * natural- program for alphabet printing
+ * main - program for alphabet printing
  * Description: 'print natural'
+ * Return: Always 0 (Success)
  */
 
-void main(void)
+int main(void)
 {
 	int n = 1024;
 	int sum = 0;
@@ -19,5 +20,5 @@ void main(void)
 		}
 
 	printf("%d\n", sum);
-
+	return (0);
 }

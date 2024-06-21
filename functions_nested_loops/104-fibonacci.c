@@ -17,11 +17,11 @@ int main(void)
 	long int base = 1000000000;
 	long int over;
 
-	while (i < 98)
+	while (i < 97)
 	{
 		if (big1 > 0)
 		{
-			printf("%ld ", big1);
+			printf("%ld", big1);
 		}
 		printf("%ld, ", big2);
 

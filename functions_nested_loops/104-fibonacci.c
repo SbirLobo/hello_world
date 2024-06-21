@@ -16,6 +16,7 @@ int main(void)
 	long int prev_big2 = 1;
 	long int base = 1000000000;
 	long int over;
+	char str_big2[80];
 
 	while (i < 97)
 	{
@@ -23,7 +24,8 @@ int main(void)
 		{
 			printf("%ld", big1);
 		}
-		printf("%ld, ", big2);
+		sprintf(str_big2, "%ld", big2);
+		printf("%s, ", str_big2);
 
 		inst = prev_big2;
 		prev_big2 = big2;

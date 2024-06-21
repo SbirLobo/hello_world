@@ -8,18 +8,15 @@
 
 int main(void)
 {
-	long int inst, count, i;
-	long int big1, prev_big1 = 0;
-	long int big2, prev_big2 = 1;
-	long int base = 1000000000;
+	long int over, inst, count, i, big1 = 0, prev_big1 = 0;
+	long int big2 = 1, prev_big2 = 1, base = 1000000000;
 
 	for (i = 0; i < 97; i++)
 	{
 		if (big1 > 0)
 		{
 			printf("%ld", big1);
-			count = base / 10;
-			while (base / count < 1)
+			for (count = base / 10; big2 / count < 1; count = count / 10)
 			{
 				printf("0");
 			}
@@ -31,10 +28,11 @@ int main(void)
 		inst = prev_big1;
 		prev_big1 = big1;
 		big1 += inst;
-		if ((big2 - big2 % base) / base > 0)
+		over = (big2 - big2 % base) / base;
+		if (over > 0)
 		{
-			big2 -= (big2 - big2 % base) / base * base;
-			big1 += (big2 - big2 % base) / base;
+			big2 -= over * base;
+			big1 += over;
 		}
 	}
 	printf("%ld%ld\n", big1, big2);

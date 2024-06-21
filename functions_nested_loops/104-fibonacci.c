@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - program for alphabet printing
@@ -16,16 +17,31 @@ int main(void)
 	long int prev_big2 = 1;
 	long int base = 1000000000;
 	long int over;
-	char str_big2[80];
+	int count = base;
+	int nbchar = 0;
 
 	while (i < 97)
 	{
 		if (big1 > 0)
 		{
 			printf("%ld", big1);
+			nbchar = 0;
+			count = base;
+			while(count > 0)
+			{
+				if (big2 - count > 0)
+				{
+					count = count - count /10;
+					nbchar++;
+				}
+			}
+			for (count; count > 0; count--)
+			{
+				printf("0");
+			}
+
 		}
-		sprintf(str_big2, "%ld", big2);
-		printf("%s, ", str_big2);
+		printf("%ld, ", big2);
 
 		inst = prev_big2;
 		prev_big2 = big2;

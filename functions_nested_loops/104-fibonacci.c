@@ -25,21 +25,11 @@ int main(void)
 		if (big1 > 0)
 		{
 			printf("%ld", big1);
-			nbchar = 0;
-			count = base;
-			while(count > 0)
-			{
-				if (big2 - count > 0)
-				{
-					count = count - count /10;
-					nbchar++;
-				}
-			}
-			for (count; count > 0; count--)
+			count = base / 10;
+			while (base / count < 1)
 			{
 				printf("0");
 			}
-
 		}
 		printf("%ld, ", big2);
 

@@ -12,14 +12,15 @@ int main(void)
 	long int cur = 1;
 	long int prev = 1;
 	long int inst;
-	int i;
+	int i = 0;
 
-	for (i = 0; i < 49; i++)
+	while (i < 49)
 	{
-			printf("%ld, ", cur);
-			inst = prev;
-			prev = cur;
-			cur += inst;
+		printf("%ld, ", cur);
+		inst = prev;
+		prev = cur;
+		cur += inst;
+		i++;
 	}
 	printf("%ld\n", cur);
 	return (0);

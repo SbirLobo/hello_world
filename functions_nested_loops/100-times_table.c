@@ -32,7 +32,7 @@ void print_times_table(int n)
 			else
 			{
 				(cent > 0) ? _putchar('0' + cent) : _putchar(space);
-				(diz > 0) ? _putchar('0' + diz) : _putchar(space);
+				(diz > 0 || cent > 0) ? _putchar('0' + diz) : _putchar(space);
 				_putchar('0' + unit);
 			}
 			if (j < n)

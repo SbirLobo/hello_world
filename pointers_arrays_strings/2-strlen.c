@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strlen - return length of string
  * @s: string
+ * Return: int for response
  */
 int _strlen(char *s)
 {

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isupper - upper car ?.
+ * _isupper - upper car ?.
  *
  * @c: character
  *

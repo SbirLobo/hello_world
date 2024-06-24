@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * reset_to_98 - reset 
+ * reset_to_98 - reset
  *
- * Return: Always 0.
+ * @n: integer
  */
 
 void reset_to_98(int *n)

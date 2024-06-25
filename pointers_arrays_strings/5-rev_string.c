@@ -11,7 +11,7 @@
 void new(int n, char *s)
 {
 	int i;
-	char tab[100];
+	char tab[1000];
 
 	for (i = 0; i < n; i++)
 	{

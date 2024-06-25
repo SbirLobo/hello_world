@@ -3,7 +3,6 @@
 
 /**
  * new - create reverse
- * rev_string - reverse string with pointer effect
  * @n: length of string
  * @s: char
  */
@@ -22,6 +21,11 @@ void new(int n, char *s)
 		*(s + i) = *(tab + i);
 	}
 }
+
+/**
+ * rev_string - reverse string with pointer effect
+ * @s: char
+ */
 
 void rev_string(char *s)
 {

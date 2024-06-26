@@ -26,7 +26,7 @@ int _strlen(char *s)
 int _atoi(char *s)
 {
 	int i, n = _strlen(s);
-	int relative = 0;
+	int relative = 1;
 	long int newInt = 0;
 
 	for (i = 0; i < n; i++)
@@ -39,10 +39,8 @@ int _atoi(char *s)
 		{
 			break;
 		}
-		if (s[i] == '+')
-			relative++;
 		if (s[i] == '-')
-			relative--;
+			relative = -relative;
 	}
 	if (relative < 0)
 		newInt = -newInt;

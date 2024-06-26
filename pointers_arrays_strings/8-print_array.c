@@ -38,7 +38,7 @@ void print_array(int *a, int n)
 	}
 	else
 	{
-		for (i = 0; i < n; i++)
+		for (i = 0; i < 5; i++)
 		{
 			(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
 		}

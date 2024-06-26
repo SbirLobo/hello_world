@@ -31,14 +31,14 @@ void print_array(int *a, int n)
 	if (n < 0)
 	{
 		n = (-n < _length) ? n : -_length;
-		for (i = _length + n; i < _length; i++)
+		for (i = 0; i < -n; i++)
 		{
-			(i == _length - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+			(i == -n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
 		}
 	}
 	else
 	{
-		for (i = _length - 5; i < _length; i++)
+		for (i = 0; i < n; i++)
 		{
 			(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
 		}

@@ -26,21 +26,10 @@ void print_array(int *a, int n)
 {
 	int i;
 	int _length = _arraylen(a);
-
+	n = (n < 0) ? -n : n;
 	n = (n < _length) ? n : _length;
-	if (n < 0)
+	for (i = 0; i < n; i++)
 	{
-		n = (-n < _length) ? n : -_length;
-		for (i = 0; i < -n; i++)
-		{
-			(i == -n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
-		}
-	}
-	else
-	{
-		for (i = 0; i < n; i++)
-		{
-			(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
-		}
+		(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
 	}
 }

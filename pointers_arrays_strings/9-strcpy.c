@@ -12,6 +12,7 @@ int _strlen(char *s)
 	int numberOfChar = 0;
 
 	do {
+		printf("%c\n", s[numberOfChar]);
 		numberOfChar++;
 	} while (s[numberOfChar] != '\0');
 	return (numberOfChar);
@@ -28,10 +29,11 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 	int n = _strlen(src);
-
+	
+	printf("%d\n", n);
 	for (i = 0; i < n; i++)
 	{
-		*(dest + i) = src[i];
+		*(dest + i) = *(src + i);
 	}
 
 	return (dest);

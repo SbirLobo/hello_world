@@ -28,7 +28,7 @@ void puts_half(char *str)
 	int n = _strlen(str);
 	int semiN;
 
-	(n % 2 == 1) ? semiN = (n + 1) / 2 : semiN = n / 2);
+	semiN = (n % 2 == 1) ? ((n + 1) / 2) : (n / 2);
 
 	for (i = semiN; i < n; i++)
 	{

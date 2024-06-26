@@ -25,7 +25,6 @@ int _arraylen(int *s)
 void print_array(int *a, int n)
 {
 	int i;
-	int _length = _arraylen(a);
 
 	n = (n < 0) ? -n : n;
 	for (i = 0; i < n; i++)

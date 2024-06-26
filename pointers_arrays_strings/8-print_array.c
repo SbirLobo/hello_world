@@ -30,6 +30,10 @@ void print_array(int *a, int n)
 	n = (n < 0) ? -n : n;
 
 	n = (n < _length) ? n : _length;
+	for (i = 0; i < _length; i++)
+	{
+		(i == _length - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+	}
 
 	for (i = 0; i < n; i++)
 	{

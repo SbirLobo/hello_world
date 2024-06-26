@@ -27,7 +27,7 @@ int _atoi(char *s)
 {
 	int i, n = _strlen(s);
 	int relative = 0;
-	int newInt = 0;
+	long int newInt = 0;
 
 	for (i = 0; i < n; i++)
 	{

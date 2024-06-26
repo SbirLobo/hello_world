@@ -29,6 +29,6 @@ void print_array(int *a, int n)
 	n = (n < 0) ? -n : n;
 	for (i = 0; i < n; i++)
 	{
-		(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+		(i == n - 1) ? printf("%d\n", *(a + i)) : printf("%d, ", *(a + i));
 	}
 }

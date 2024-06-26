@@ -26,13 +26,11 @@ void puts_half(char *str)
 {
 	int i;
 	int n = _strlen(str);
+	int semiN;
 
-	if (n % 2 == 1)
-	{
-		n++;
-	}
+	(n % 2 == 1) ? semiN = (n + 1) / 2 : semiN = n / 2);
 
-	for (i = n / 2; i < n; i++)
+	for (i = semiN; i < n; i++)
 	{
 		_putchar(str[i]);
 	}

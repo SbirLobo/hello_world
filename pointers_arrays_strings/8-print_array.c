@@ -25,17 +25,15 @@ int _arraylen(int *s)
 void print_array(int *a, int n)
 {
 	int i;
-	int lengthofarray = _arraylen(a);
+	int _length = _arraylen(a);
 
-	n = (n < lengthofarray) ? n : lengthofarray;
-
-	printf("length: %d\tn: %d\n", lengthofarray, n);
+	n = (n < _length) ? n : _length;
 
 	if (n < 0)
 	{
-		for (i = lengthofarray + n; i < lengthofarray; i++)
+		for (i = _length + n; i < _length; i++)
 		{
-			(i == lengthofarray - 1) ? printf("%d\n", *(a + i)) : printf("%d, ", *(a + i));
+			(i == _length - 1) ? printf("%d\n", *(a + i)) : printf("%d, ", *(a + i));
 		}
 	}
 	else

@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _strlen - return length of string
- * @s: string
+ * _arraylen - return length of array
+ * @s: array
  * Return: int for response
  */
 int _arraylen(int *s)
@@ -25,12 +25,10 @@ int _arraylen(int *s)
 void print_array(int *a, int n)
 {
 	int i;
-	int lengthofarray = n;
-	lengthofarray = _arraylen(a);
+	int lengthofarray = _arraylen(a);
 
 	n = (n < lengthofarray) ? n : lengthofarray;
 
-	printf("%d\t%d\n", lengthofarray, n);
 	for (i = 0; i < n; i++)
 	{
 		(i == n - 1) ? printf("%d\n", *(a + i)) : printf("%d, ", *(a + i));

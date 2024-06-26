@@ -29,11 +29,13 @@ void print_array(int *a, int n)
 
 	n = (n < lengthofarray) ? n : lengthofarray;
 
+	printf("length: %d\tn: %d\n", lengthofarray, n);
+
 	if (n < 0)
 	{
 		for (i = lengthofarray + n; i < lengthofarray; i++)
 		{
-			(i == n - 1) ? printf("%d\n", *(a + i)) : printf("%d, ", *(a + i));
+			(i == lengthofarray - 1) ? printf("%d\n", *(a + i)) : printf("%d, ", *(a + i));
 		}
 	}
 	else

@@ -27,16 +27,20 @@ void print_array(int *a, int n)
 	int i;
 	int _length = _arraylen(a);
 
-	n = (n < 0) ? -n : n;
-
 	n = (n < _length) ? n : _length;
-	for (i = 0; i < _length; i++)
+	if (n < 0)
 	{
-		(i == _length - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+		n = (-n < _length) ? n : -_length;
+		for (i = _length + n; i < _length; i++)
+		{
+			(i == _length - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+		}
 	}
-
-	for (i = 0; i < n; i++)
+	else
 	{
-		(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+		for (i = 0; i < n; i++)
+		{
+			(i == n - 1) ? printf("%d\n", a[i]) : printf("%d, ", a[i]);
+		}
 	}
 }

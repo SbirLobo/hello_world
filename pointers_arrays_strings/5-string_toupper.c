@@ -4,7 +4,7 @@
 /**
  * *string_toupper - change all lawer to upper
  * @c: string
- * Result: string
+ * Return: string
  */
 
 char *string_toupper(char *c)

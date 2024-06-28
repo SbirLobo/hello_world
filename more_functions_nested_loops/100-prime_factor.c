@@ -30,9 +30,7 @@ int main(void)
 			if (n % i == 0)
 			{
 				n = n / i;
-				if (n != 1)
-					printf("%d, ", i);
-				else
+				if (n == 1)
 					printf("%d\n", i);
 			}
 			else

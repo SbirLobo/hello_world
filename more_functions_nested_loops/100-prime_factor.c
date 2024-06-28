@@ -9,23 +9,37 @@
 int main(void)
 {
 	long int n = 612852475143;
-	int i, check = 0;
-	int list[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+	int i = 2, j = 2;
+	int prem = 1;
 
-	while (check <= 2)
+	while (n != 1)
 	{
-		for (i = 0; i < 25; i++)
-		{
-			check++;
-			if (n % list[i] == 0)
+		for (j = 2; j < i; j++)
+			if (i % j == 0)
 			{
-				n = n / list[i];
-				printf("%d, ", list[i]);
-				check = 0;
+				prem = 0;
+				break;
 			}
+		if (prem == 0)
+		{
+			i++;
+			prem = 1;
 		}
+		if (prem == 1)
+		{
+			if (n % i == 0)
+			{
+				n = n / i;
+				if (n != 1)
+					printf("%d, ", i);
+				else
+					printf("%d\n", i);
+			}
+			else
+				i++;
 
+		}
 	}
-	printf("%ld\n", n);
+
 return (0);
 }

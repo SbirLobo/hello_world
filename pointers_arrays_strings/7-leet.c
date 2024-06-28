@@ -9,18 +9,18 @@
 
 char *leet(char *c)
 {
-	int c_length = 0;
-	int i;
+	int i = 0, j;
+	char ref[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char chg[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	while (c[c_length] != '\0')
-		c_length++;
-	for (i = 0; i < c_length; i++)
+	while (c[i] != '\0')
 	{
-		c[i] = (c[i] == 'a' || c[i] == 'A') ? '4' : c[i];
-		c[i] = (c[i] == 'e' || c[i] == 'E') ? '3' : c[i];
-		c[i] = (c[i] == 'o' || c[i] == 'O') ? '0' : c[i];
-		c[i] = (c[i] == 't' || c[i] == 'T') ? '7' : c[i];
-		c[i] = (c[i] == 'l' || c[i] == 'L') ? '1' : c[i];
+		for (j = 0; j < 10; j++)
+		{
+			if (c[i] == ref[j])
+				c[i] = chg[j];
+		}
+		i++;
 	}
 	return (c);
 }

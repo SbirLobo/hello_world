@@ -20,10 +20,9 @@ void print_number(int n)
 		_putchar('0');
 		return;
 	}
-	while (n % i < n)
+	while (n % (i * 10) < n)
 		i = i * 10;
-	
-	i = i / 10;
+
 	while (n > 0)
 	{
 		if (n % i == n)

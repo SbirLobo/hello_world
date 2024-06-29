@@ -24,7 +24,7 @@ void print_number(int n)
 		i = i * 10;
 	
 	i = i / 10;
-	while (n > 0)
+/*	while (n > 0)
 	{
 		if (n % i == n)
 		{
@@ -37,4 +37,5 @@ void print_number(int n)
 		}
 		i = i / 10;
 	}
+*/
 }
